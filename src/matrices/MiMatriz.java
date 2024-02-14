@@ -116,4 +116,22 @@ public class MiMatriz {
 	}
 	
 	
+	
+	public float mediaFila(int fila) {
+		
+		float media = 0;
+		
+		// miro si la fila es legal
+		if(fila>=1 && fila<=filas) {
+			
+			for(int j=0;j<columnas;j++) {
+				
+				media += datos[fila-1][j];
+			}
+			return media = media / columnas;
+		}
+		else return -1;
+	}
+	
+	
 }
