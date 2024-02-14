@@ -104,7 +104,16 @@ public class MiMatriz {
 	
 	
 	
-	
+	public void rellenarConNumero(int numero) {
+		
+		for(int i=0;i<filas;i++) {
+			for(int j=0;j<columnas;j++) {
+				
+				// rellena con un número 
+				datos[i][j] = numero;
+			}
+		}
+	}
 	
 	
 }
