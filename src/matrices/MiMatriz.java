@@ -18,14 +18,16 @@ public class MiMatriz {
 	}
 
 
+	
+	
 
 	public void rellenar() {
 		
 		for(int i=0;i<filas;i++) {
 			for(int j=0;j<columnas;j++) {
 				
-				// rellena con un número entre 0 y 14
-				datos[i][j] = (int) Math.random()*15;
+				// rellena con un número entre 0 y 9
+				datos[i][j] = (int) (Math.random()*10);
 			}
 		}
 	}
@@ -34,8 +36,6 @@ public class MiMatriz {
 
 	public void imprimir() {
 
-		System.out.println(Arrays.toString(datos[0]));
-		
 		for(int i=0;i<filas;i++) {
 			for(int j=0;j<columnas;j++) {
 				
@@ -44,5 +44,24 @@ public class MiMatriz {
 			System.out.println();
 		}		
 	}
+	
+	
+	
+	public boolean isCuadrada() {
+		
+		if(filas==columnas) {
+			return true;
+		}
+		else return false;
+	}
+	
+	
+	
+	
+
+	
+	
+	
+	
 	
 }
