@@ -6,6 +6,7 @@ public class Start {
 		
 		
 		MiMatriz miMatriz = new MiMatriz(5,7);
+		miMatriz.rellenarPorFilas();
 		miMatriz.imprimir();
 		System.out.println("es cuadrada? "+miMatriz.isCuadrada());
 
