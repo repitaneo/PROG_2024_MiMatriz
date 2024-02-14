@@ -71,5 +71,23 @@ public class MiMatriz {
 	
 	
 	
+	public void rellenarFilaNumero(int fila,int numero) {
+		
+		// miro si la fila es legal
+		if(fila>=1 && fila<=filas) {
+
+			// si lo es, recorro las columnas
+			for(int j=0;j<columnas;j++) {
+				
+				// cuelo el número es la fila-1 de mi matriz
+				datos[fila-1][j] = numero;
+			}
+		}
+	}
+	
+	
+	
+	
+	
 	
 }
