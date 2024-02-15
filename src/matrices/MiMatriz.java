@@ -170,4 +170,24 @@ public class MiMatriz {
 		else return -1;
 	}	
 	
+	
+	
+	public float mediaDiagonalSecundaria() {
+		
+		float media = 0;
+		
+		// miro si es cuadrada
+		if(isCuadrada()) {
+			
+			for(int i=0;i<filas;i++) {
+				
+				media += datos[i][columnas-1-i];
+			}
+			return media = media / filas;
+		}
+		else return -1;
+	}	
+	
+	
+	
 }
