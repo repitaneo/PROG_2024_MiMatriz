@@ -7,8 +7,9 @@ public class Start {
 		
 		MiMatriz miMatriz = new MiMatriz(5,7);
 		miMatriz.rellenar();
-		miMatriz.rellenarConNumero(6);
 		miMatriz.imprimir();
+		System.out.println(miMatriz.mediaColumna(5));
+		System.out.println(miMatriz.mediaFila(2));
 		
 
 	}
